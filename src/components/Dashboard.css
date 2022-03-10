@@ -1,0 +1,37 @@
+img {
+  width: 610px;
+  height: 520px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: 2rem;
+}
+
+.house-container {
+  background-color: white;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0px 1px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.title-header {
+  margin-top: 5%;
+  width: 50%;
+  color: #333;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+}

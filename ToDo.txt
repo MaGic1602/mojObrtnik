@@ -1,0 +1,3 @@
+1.Spojit signup sa serverom //done
+2.Da nakon prijave automatski se radi profil obrtnika
+3.uredit profile gallery

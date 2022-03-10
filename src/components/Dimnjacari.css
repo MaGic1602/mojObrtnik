@@ -1,0 +1,6 @@
+.dimnjacari-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-left: 10vw;
+}

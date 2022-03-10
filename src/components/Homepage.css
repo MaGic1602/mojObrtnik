@@ -1,0 +1,39 @@
+.obrtnici {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.text-container {
+  display: flex;
+  margin-left: 2vw;
+  flex-direction: column;
+  align-self: flex-start;
+  position: absolute;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.download-link {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+
+.download-link:hover {
+  color: #fa7123;
+}
+
+.download-container {
+  font-size: medium;
+  display: flex;
+  margin: 10px;
+}

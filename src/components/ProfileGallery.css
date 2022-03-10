@@ -1,0 +1,40 @@
+.profile-gallery-wrapper {
+  display: flex;
+  flex-direction: row;
+  border-color: #777;
+  border-radius: 25px;
+  margin: 0 2rem 2rem 0;
+  padding: 1rem;
+  width: 400px;
+  height: 150px;
+  box-shadow: 0px 1px 0px 3px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+  align-content: stretch;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-label-sec {
+  color: #333;
+  font-weight: 500;
+  height: min-content;
+  align-self: flex-start;
+}
+
+.img-avatar {
+  width: auto;
+  height: 100px;
+  padding: 10px;
+}
+
+.avatar-about-me {
+  display: flex;
+  color: #333;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 300px;
+}
