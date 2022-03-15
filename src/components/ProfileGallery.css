@@ -1,7 +1,11 @@
 .profile-gallery-wrapper {
   display: grid;
-  grid-template-rows: 60px;
-  grid-template-columns: 60px;
+  grid-template-rows: 16% 68% 16%;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+    "contact1 contact"
+    "avatar description"
+    "name name";
   border-color: #777;
   border-radius: 25px;
   margin: 0 2rem 2rem 0;
@@ -13,47 +17,35 @@
   align-content: stretch;
 }
 
-.avatar-container {
-  display: flex;
-  width: max-content;
-  justify-content: center;
-}
-
 .avatar-label-sec {
   color: #333;
   font-weight: 500;
-  height: 100%;
-  grid-row-start: 3;
-  grid-column-start: 1;
+  grid-area: name;
+  height: fit-content;
+  width: fit-content;
 }
 
 .img-avatar {
   width: auto;
   height: 100px;
-  padding: 10px;
+  grid-area: avatar;
 }
 
 .avatar-about-me {
   display: flex;
   color: #333;
   flex-direction: row;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  padding: 2px;
-
-  width: 200px;
+  grid-area: description;
+  height: fit-content;
+  width: fit-content;
 }
 .avatar-contact {
   color: #333;
-  padding: 9px;
+
   font-weight: 500;
-  height: max-content;
-  grid-column-start: 4;
-  /* grid-column-end: 3; */
-  grid-column-end: 4;
-  grid-row-end: 2;
-  justify-self: flex-end;
+  height: fit-content;
+  width: fit-content;
+  grid-area: contact;
 }
 
 @media screen and (max-width: 500px) {
