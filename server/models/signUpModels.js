@@ -11,10 +11,20 @@ const SignUpTemplate = new mongoose.Schema({
     required: true,
   },
 
+  aboutMe: {
+    type: String,
+    required: true,
+  },
+
+  selection: {
+    type: String,
+    required: true,
+  },
+
   password: {
     type: String,
     required: true,
   },
 });
 
-module.exports = mongoose.model("users", SignUpTemplate);
+module.exports = mongoose.model("realUsers", SignUpTemplate);

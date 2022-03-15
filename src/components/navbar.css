@@ -82,3 +82,36 @@
 .nav-link2:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .pretty-little-bar {
+    width: 100%;
+    display: inline-block;
+  }
+  .container-navbar-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .logo-image {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

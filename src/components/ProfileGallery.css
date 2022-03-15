@@ -1,6 +1,7 @@
 .profile-gallery-wrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: 60px;
   border-color: #777;
   border-radius: 25px;
   margin: 0 2rem 2rem 0;
@@ -9,20 +10,21 @@
   height: 150px;
   box-shadow: 0px 1px 0px 3px rgba(0, 0, 0, 0.2);
   background-color: white;
-
   align-content: stretch;
 }
 
 .avatar-container {
   display: flex;
+  width: max-content;
   justify-content: center;
 }
 
 .avatar-label-sec {
   color: #333;
   font-weight: 500;
-  height: min-content;
-  align-self: flex-start;
+  height: 100%;
+  grid-row-start: 3;
+  grid-column-start: 1;
 }
 
 .img-avatar {
@@ -35,6 +37,27 @@
   display: flex;
   color: #333;
   flex-direction: row;
-  align-items: flex-end;
-  width: 300px;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 2px;
+
+  width: 200px;
+}
+.avatar-contact {
+  color: #333;
+  padding: 9px;
+  font-weight: 500;
+  height: max-content;
+  grid-column-start: 4;
+  /* grid-column-end: 3; */
+  grid-column-end: 4;
+  grid-row-end: 2;
+  justify-self: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-gallery-wrapper {
+    display: block;
+  }
 }

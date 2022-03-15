@@ -1,6 +1,14 @@
 .dimnjacari-wrapper {
   display: flex;
-  flex-direction: column;
-  width: 80vw;
-  margin-left: 10vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .dimnjacari-wrapper {
+    width: 100%;
+    display: inline-block;
+  }
 }

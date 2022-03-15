@@ -9,6 +9,8 @@ export default function SignUp() {
     Name: "",
     email: "",
     password: "",
+    aboutMe: "",
+    selection: "",
   });
 
   //posting to DB
@@ -41,7 +43,7 @@ export default function SignUp() {
           <h2 className="signup-h2">Registriraj se</h2>
           <input
             type="text"
-            placeholder="Ime"
+            placeholder="Ime koje će se prikazati na tvoj profilu"
             name="Name"
             value={formValue.Name}
             onChange={handleChange}
@@ -49,12 +51,36 @@ export default function SignUp() {
           ></input>
           <input
             type="text"
-            placeholder="e-mail"
+            placeholder="e-mail ili drugi kontakt"
             name="email"
             value={formValue.email}
             onChange={handleChange}
             className="form-control"
           ></input>
+          <input
+            type="text"
+            name="aboutMe"
+            placeholder="Opis profila"
+            value={formValue.aboutMe}
+            onChange={handleChange}
+            className="form-control"
+          ></input>
+          <select
+            type="text"
+            name="selection"
+            value={formValue.selection}
+            onChange={handleChange}
+            className="form-control"
+          >
+            <option selected disabled>
+              Ja sam:
+            </option>
+            <option value="dimnjacari">Dimnjačar</option>
+            <option value="parketar-keramicar">Parketar/Keramičar</option>
+            <option value="monter">Monter</option>
+            <option value="limar">Limar</option>
+            <option value="krovar">Krovar</option>
+          </select>
           <input
             type="text"
             name="password"
@@ -68,9 +94,9 @@ export default function SignUp() {
             className="submit-btn"
             value="Prijavi se"
           ></input>
-          <h3 className="signup-h2">
+          <h4 className="signup-h2">
             Postani član mojObrtnik i nudi svoje usluge svima kojima trebaju
-          </h3>
+          </h4>
         </form>
       </div>
     </div>

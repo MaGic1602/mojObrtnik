@@ -32,3 +32,10 @@
 .links-a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+  .img-card {
+    display: inline-block;
+    align-self: flex-end;
+  }
+}

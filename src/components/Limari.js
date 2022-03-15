@@ -4,7 +4,7 @@ import ProfileGallery from "./ProfileGallery";
 import "./Dimnjacari.css";
 import axios from "axios";
 
-export default function Dimnjacari() {
+export default function Limari() {
   const [isLoading, setLoading] = useState(true);
   const [values, setValues] = useState({});
 
@@ -14,8 +14,8 @@ export default function Dimnjacari() {
 
   const getValues = () => {
     axios
-      .get("http://localhost:4000/app/dimnjacari", {
-        params: { selection: "dimnjacari" },
+      .get("http://localhost:4000/app/limari", {
+        params: { selection: "limar" },
       })
       .then((response) => {
         setValues(response.data);

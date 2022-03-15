@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: row;
   width: 42vw;
-  height: 400px;
+  height: 450px;
   align-self: center;
   border-radius: 25px;
   padding: 25px;
@@ -37,8 +37,8 @@
 }
 
 .img-woman {
-  width: 200px;
-  height: 340px;
+  width: 230px;
+  height: 400px;
 }
 
 .form-control:hover {
@@ -54,4 +54,17 @@
 .submit-btn:hover {
   background-color: #fa7123;
   color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .signup-wrapper {
+    display: inline-block;
+  }
+  .form-container {
+    display: block;
+  }
+  .img-woman {
+    width: 100px;
+    height: 200px;
+  }
 }

@@ -1,0 +1,36 @@
+
+[
+    {
+    "description":"1st",
+    "title":"Ante parketi",
+    "aboutMe":"20 godina iskustva u obnavljanju keramike"
+},
+
+{
+    "id":7,
+    "description":"2nd",
+    "title":"Mate parketi",
+    "aboutMe":"10 godina iskustva u parketima"
+},
+
+{
+    "description":"3rd",
+    "title":"Ivo keramika parketi",
+    "aboutMe":"Parketi povoljno"
+},
+{
+    "description":"4rd",
+    "title":"Mile podovi",
+    "aboutMe":"Jeftini podovi"
+},
+{
+    "description":"4rd",
+    "title":"Mile dimnjaci",
+    "aboutMe":"čistim dimnjake"
+},
+{
+    "description":"4rd",
+    "title":"Mile dimnjaci",
+    "aboutMe":"čistim dimnjake"
+}
+]
