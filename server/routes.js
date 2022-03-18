@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const signUpTemplateCopy = require("../server/models/signUpModels");
 
-router.post("/logIn", (req, res) => {
+router.post("/signup", (req, res) => {
   const signedUpUser = new signUpTemplateCopy({
     Name: req.body.Name,
     email: req.body.email,

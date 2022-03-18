@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 import "./Homepage.css";
 import obrtnici from "./assets/images/obrtnici.jpg";
 import prospekt from "./assets/textFiles/prospect.txt";

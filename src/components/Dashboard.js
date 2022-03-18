@@ -26,13 +26,6 @@ export default function Dashboard() {
           <map id="workmap" name="workmap">
             <area
               shape="poly"
-              coords="215,253,252,256,253,325,213,306"
-              alt="doors"
-              href="bravari"
-              onClick={handleOnClick}
-            />
-            <area
-              shape="poly"
               coords="121,164,328,41,431,57,228,178"
               alt="roof"
               href="krovari"

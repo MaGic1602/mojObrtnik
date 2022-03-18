@@ -17,7 +17,7 @@ function Navbar() {
     <>
       <div className="pretty-little-bar">
         Nikad lakše do posla!
-        <Link to="/logIn" className="nav-link2" onClick={closeMobileMenu}>
+        <Link to="/signup" className="nav-link2" onClick={closeMobileMenu}>
           Pridruži se
         </Link>{" "}
         našem timu stručnjaka u mojObrtnik
@@ -48,8 +48,8 @@ function Navbar() {
         </div>
         <div className="navbar-right">
           <div className="container-navbar-links">
-            <Link to="/logIn" className="nav-link" onClick={closeMobileMenu}>
-              Prijavi se
+            <Link to="/signup" className="nav-link" onClick={closeMobileMenu}>
+              Registracija
             </Link>
           </div>
         </div>

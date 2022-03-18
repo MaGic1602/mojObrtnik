@@ -51,6 +51,11 @@
   height: 60px;
 }
 
+.login-btn {
+  color: #fa7123;
+  text-decoration: none;
+}
+
 .submit-btn:hover {
   background-color: #fa7123;
   color: white;

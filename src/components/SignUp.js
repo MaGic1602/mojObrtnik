@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 import woman from "./assets/images/woman.jpg";
 import MarisInstance from "./axiosInstance";
@@ -18,7 +19,7 @@ export default function SignUp() {
     try {
       const response = await MarisInstance({
         method: "post",
-        url: "/app/logIn",
+        url: "/app/signup",
         data: formValue,
         header: { "Content-Type": "application/json" },
       });
@@ -82,7 +83,7 @@ export default function SignUp() {
             <option value="krovar">Krovar</option>
           </select>
           <input
-            type="text"
+            type="password"
             name="password"
             placeholder="Lozinka"
             value={formValue.password}
@@ -95,7 +96,10 @@ export default function SignUp() {
             value="Prijavi se"
           ></input>
           <h4 className="signup-h2">
-            Postani član mojObrtnik i nudi svoje usluge svima kojima trebaju
+            Več imaš račun?{" "}
+            <Link className="login-btn" to="/login">
+              Prijavi se
+            </Link>{" "}
           </h4>
         </form>
       </div>
